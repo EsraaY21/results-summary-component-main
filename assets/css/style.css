@@ -1,0 +1,151 @@
+@import url('reset.css');
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+
+    /* Primary Colors */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradient Backgrounds */
+    --light-slate-blue-bg: hsl(252, 100%, 67%);
+    --light-slate-blue-bg2: hsl(252, 100%, 63%);
+    --light-royal-blue-bg: hsl(241, 81%, 54%);
+
+    /* Circle Colors */
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Gradient  */
+    --linear-primary: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+
+    --font-family-default: 'HankenGrotesk', sans-serif;
+
+    --fw-bold: 700;
+
+    --calc-1: 1rem;
+    /* 16px */
+
+    --calc-1_125: 1.125rem;
+    /* 18px */
+
+    --calc-1_5: 1.5rem;
+    /* 24px */
+
+    --calc-2: 2rem;
+    /* 32px */
+
+    --calc-2_375: 2.375rem;
+    /* 38px */
+
+    --calc-2_5: 2.5rem;
+    /* 40px */
+
+    --calc-2_875: 2.875rem;
+    /* 46px */
+
+    --calc-3_375: 3.375rem;
+    /* 54px */
+
+    --calc-3_5: 3.5rem;
+    /* 56px */
+
+    --calc-20: 20rem;
+    /* 320px */
+
+    --calc-37_5: 37.5rem;
+    /* 600px */
+
+    --calc-46: 46rem;
+    /* 736px */
+}
+
+* {
+    font-family: var(--font-family-default);
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    border-radius: var(--calc-2);
+    background-color: white;
+    display: flex;
+    max-width: var(--calc-46);
+}
+
+.card section {
+    width: 50%;
+}
+
+.card section.left {
+    border-radius: var(--calc-2);
+    background: var(--linear-primary);
+    padding-right: var(--calc-3_375);
+    padding-left: var(--calc-3_375);
+    padding-top: var(--calc-2_375);
+    padding-bottom: var(--calc-2_875);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading M  */
+.card section h2 {
+    font-size: var(--calc-1_5);
+    font-weight: var(--fw-bold);
+}
+
+.card section.left h2 {
+    color: var(--light-lavender);
+    margin-bottom: 2.1875rem;
+    /* 35px */
+}
+
+.card section.left .grade {
+    width: 12.5rem;
+    /* 200px */
+    height: 12.5rem;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.75rem;
+    /* 28px */
+}
+
+.card section.left .grade h1{
+    color: white;
+    font-size: 4.5rem;
+    /* 72px */
+    font-weight: 800;
+    margin-bottom: 0.25rem;
+    /* 4px */
+}
+
+.card section.left .grade p{
+    color: var(--light-lavender);
+}
